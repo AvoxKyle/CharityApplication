@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  DownSyndrome
+//  CharityApp
 //
-//  Created by Sierra on 2/1/19.
-//  Copyright © 2019 Sierra King. All rights reserved.
+//  Created by King,Sierra M on 2/26/19.
+//  Copyright © 2019 King,Sierra M. All rights reserved.
 //
 
 import UIKit
@@ -14,7 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
 
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
     }
