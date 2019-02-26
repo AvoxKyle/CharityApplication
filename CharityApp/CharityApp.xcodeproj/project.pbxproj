@@ -12,6 +12,7 @@
 		32BAF9452225DA7800A947BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BAF9432225DA7800A947BD /* Main.storyboard */; };
 		32BAF9472225DA7900A947BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 32BAF9462225DA7900A947BD /* Assets.xcassets */; };
 		32BAF94A2225DA7900A947BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32BAF9482225DA7900A947BD /* LaunchScreen.storyboard */; };
+		C49B4D962225EA520039D524 /* Events_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4D952225EA520039D524 /* Events_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		32BAF9462225DA7900A947BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		32BAF9492225DA7900A947BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		32BAF94B2225DA7900A947BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C49B4D952225EA520039D524 /* Events_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				32BAF93F2225DA7800A947BD /* AppDelegate.swift */,
 				32BAF9412225DA7800A947BD /* ViewController.swift */,
 				32BAF9432225DA7800A947BD /* Main.storyboard */,
+				C49B4D952225EA520039D524 /* Events_ViewController.swift */,
 				32BAF9462225DA7900A947BD /* Assets.xcassets */,
 				32BAF9482225DA7900A947BD /* LaunchScreen.storyboard */,
 				32BAF94B2225DA7900A947BD /* Info.plist */,
@@ -137,6 +140,7 @@
 			files = (
 				32BAF9422225DA7800A947BD /* ViewController.swift in Sources */,
 				32BAF9402225DA7800A947BD /* AppDelegate.swift in Sources */,
+				C49B4D962225EA520039D524 /* Events_ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
