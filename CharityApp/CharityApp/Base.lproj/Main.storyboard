@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="CJa-Up-N4D">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -13,16 +13,25 @@
         <!--News-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="News" id="BYZ-38-t0r" customClass="ViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NewsController" title="News" id="BYZ-38-t0r" customClass="ViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="122" y="99"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="nsk-iu-tc8">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="CJa-Up-N4D" customClass="PageViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="etE-OT-x1K" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="38" y="-645"/>
         </scene>
         <!--Specific Event-->
         <scene sceneID="mbV-3a-Som">
@@ -42,7 +51,7 @@
         <!--Events-->
         <scene sceneID="c3x-A4-82I">
             <objects>
-                <viewController title="Events" id="fbh-BF-bFq" customClass="Events_ViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventsController" title="Events" id="fbh-BF-bFq" customClass="Events_ViewController" customModule="CharityApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LpM-jc-WQP">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -76,17 +85,13 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tXe-4M-HhP"/>
                     </view>
-                    <keyCommands>
-                        <keyCommand discoverabilityTitle="label"/>
-                    </keyCommands>
                     <connections>
                         <outlet property="EventDate" destination="S6e-mb-2aB" id="618-sD-D4n"/>
                         <outlet property="EventDesc" destination="tvQ-NK-zPw" id="9yh-yM-qBA"/>
                         <outlet property="EventName" destination="Hmr-n3-AUK" id="dr6-7t-FCg"/>
-                        <outlet property="dumbname" destination="uet-2Q-Xo3" id="EX4-wZ-yi2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Oe7-TF-a2f" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -96,17 +101,17 @@
         <!--Donations-->
         <scene sceneID="1C0-XY-jrx">
             <objects>
-                <viewController title="Donations" id="HFh-bq-Ib3" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DonationsController" title="Donations" id="HFh-bq-Ib3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wvV-Qy-EWk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="fQl-to-OGX"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Xf-ol-O6m" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650" y="137"/>
+            <point key="canvasLocation" x="1593" y="130"/>
         </scene>
     </scenes>
 </document>
