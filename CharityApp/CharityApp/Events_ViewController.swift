@@ -21,6 +21,7 @@ class Events_ViewController: UIViewController {
     @IBOutlet var EventName: UILabel!
     @IBOutlet var EventDesc: UILabel!
     @IBOutlet var EventDate: UILabel!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,24 +31,26 @@ class Events_ViewController: UIViewController {
         test_Event.event_Desc = "Something that's happening and will be very large"
         test_Event.event_Date = "3/14/19"
         
-        
+       
     EventName.text = test_Event.event_Name!
     EventDesc.text = test_Event.event_Desc!
     EventDate.text = test_Event.event_Date!
  
         
+        
         // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+ 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if  segue.destination is SpecEvent_ViewController {
+            let vc = segue.destination as! SpecEvent_ViewController
+            vc.passedName = self.EventName.text
+        }
     }
-    */
-
+    
+    @IBAction func OpenEvent(_ sender: Any) {
+    }
 }
