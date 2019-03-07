@@ -75,11 +75,6 @@ class Events_ViewController: UIViewController {
         test_Event.event_Desc = "Something that's happening and will be very large"
         test_Event.event_Date = "3/14/19"
         
-        /*
-    EventName.text = test_Event.event_Name!
-    EventDesc.text = test_Event.event_Desc!
-    EventDate.text = test_Event.event_Date!
- */
     }
     
 
@@ -92,6 +87,8 @@ class Events_ViewController: UIViewController {
         if  segue.destination is SpecEvent_ViewController {
             let vc = segue.destination as! SpecEvent_ViewController
             vc.passedName = self.EventName[button.tag-1].text
+            vc.passedDetails = self.EventDesc[button.tag-1].text
+            vc.passedDate = self.EventDate[button.tag-1].text
         }
     }
     

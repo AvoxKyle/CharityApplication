@@ -19,14 +19,20 @@ class SpecItem {
 class SpecEvent_ViewController: UIViewController {
 
     @IBOutlet var SpecName: UILabel!
+    @IBOutlet var SpecDetails: UILabel!
+    @IBOutlet var SpecDate: UILabel!
     @IBOutlet var PopUpView: UIView!
     
     var passedName:String!
+    var passedDetails:String!
+    var passedDate:String!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         SpecName.text = passedName
+        SpecDetails.text = passedDetails
+        SpecDate.text = passedDate
         
     }
     
