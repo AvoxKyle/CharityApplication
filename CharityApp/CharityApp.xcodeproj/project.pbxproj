@@ -16,6 +16,7 @@
 		84914A24222631B900DF9DDA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84914A23222631B900DF9DDA /* PageViewController.swift */; };
 		84914A2622401D9A00DF9DDA /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84914A2522401D9A00DF9DDA /* DonationViewController.swift */; };
 		95A8C878BBDCFE5E4B89BB52 /* Pods_CharityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C026E26A5526514E55535AAB /* Pods_CharityApp.framework */; };
+		C40B3914225F8DB7004FEDA1 /* eventsHideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = C40B3913225F8DB7004FEDA1 /* eventsHideSections.js */; };
 		C49B4D962225EA520039D524 /* Events_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4D952225EA520039D524 /* Events_ViewController.swift */; };
 		C4C51053222D977600A3AFCE /* SpecEvent_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -34,6 +35,7 @@
 		84914A23222631B900DF9DDA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		84914A2522401D9A00DF9DDA /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		C026E26A5526514E55535AAB /* Pods_CharityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40B3913225F8DB7004FEDA1 /* eventsHideSections.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = eventsHideSections.js; sourceTree = "<group>"; };
 		C49B4D952225EA520039D524 /* Events_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events_ViewController.swift; sourceTree = "<group>"; };
 		C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecEvent_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 				32BAF9462225DA7900A947BD /* Assets.xcassets */,
 				32BAF9482225DA7900A947BD /* LaunchScreen.storyboard */,
 				32BAF94B2225DA7900A947BD /* Info.plist */,
+				C40B3913225F8DB7004FEDA1 /* eventsHideSections.js */,
 			);
 			path = CharityApp;
 			sourceTree = "<group>";
@@ -100,7 +103,6 @@
 				0B776D81959FBD47FFB766CB /* Pods-CharityApp.debug.xcconfig */,
 				1412BAC96C924A90D45400EA /* Pods-CharityApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -167,6 +169,7 @@
 				841CFC6222544756000AE403 /* hideSections.js in Resources */,
 				32BAF94A2225DA7900A947BD /* LaunchScreen.storyboard in Resources */,
 				32BAF9472225DA7900A947BD /* Assets.xcassets in Resources */,
+				C40B3914225F8DB7004FEDA1 /* eventsHideSections.js in Resources */,
 				32BAF9452225DA7800A947BD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
