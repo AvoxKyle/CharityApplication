@@ -15,11 +15,14 @@
 		841CFC6222544756000AE403 /* hideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = 841CFC6122544756000AE403 /* hideSections.js */; };
 		84914A24222631B900DF9DDA /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84914A23222631B900DF9DDA /* PageViewController.swift */; };
 		84914A2622401D9A00DF9DDA /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84914A2522401D9A00DF9DDA /* DonationViewController.swift */; };
+		95A8C878BBDCFE5E4B89BB52 /* Pods_CharityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C026E26A5526514E55535AAB /* Pods_CharityApp.framework */; };
 		C49B4D962225EA520039D524 /* Events_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4D952225EA520039D524 /* Events_ViewController.swift */; };
 		C4C51053222D977600A3AFCE /* SpecEvent_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0B776D81959FBD47FFB766CB /* Pods-CharityApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityApp.debug.xcconfig"; path = "Target Support Files/Pods-CharityApp/Pods-CharityApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1412BAC96C924A90D45400EA /* Pods-CharityApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CharityApp.release.xcconfig"; path = "Target Support Files/Pods-CharityApp/Pods-CharityApp.release.xcconfig"; sourceTree = "<group>"; };
 		32BAF93C2225DA7800A947BD /* CharityApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CharityApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32BAF93F2225DA7800A947BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32BAF9412225DA7800A947BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		841CFC6122544756000AE403 /* hideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = hideSections.js; sourceTree = "<group>"; };
 		84914A23222631B900DF9DDA /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
 		84914A2522401D9A00DF9DDA /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
+		C026E26A5526514E55535AAB /* Pods_CharityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C49B4D952225EA520039D524 /* Events_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events_ViewController.swift; sourceTree = "<group>"; };
 		C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecEvent_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -39,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				95A8C878BBDCFE5E4B89BB52 /* Pods_CharityApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,6 +55,8 @@
 			children = (
 				32BAF93E2225DA7800A947BD /* CharityApp */,
 				32BAF93D2225DA7800A947BD /* Products */,
+				E1F16690B10379B5AF94EFAB /* Pods */,
+				D3F693111A4ADA911DFFE759 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +86,24 @@
 			path = CharityApp;
 			sourceTree = "<group>";
 		};
+		D3F693111A4ADA911DFFE759 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C026E26A5526514E55535AAB /* Pods_CharityApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1F16690B10379B5AF94EFAB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0B776D81959FBD47FFB766CB /* Pods-CharityApp.debug.xcconfig */,
+				1412BAC96C924A90D45400EA /* Pods-CharityApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +111,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 32BAF94E2225DA7900A947BD /* Build configuration list for PBXNativeTarget "CharityApp" */;
 			buildPhases = (
+				B3CB0C0BF7638889C5328B66 /* [CP] Check Pods Manifest.lock */,
 				32BAF9382225DA7800A947BD /* Sources */,
 				32BAF9392225DA7800A947BD /* Frameworks */,
 				32BAF93A2225DA7800A947BD /* Resources */,
+				917043246EDD2E17E0FAF3F9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -145,6 +172,53 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		917043246EDD2E17E0FAF3F9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CharityApp/Pods-CharityApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwiftSoup/SwiftSoup.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSoup.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CharityApp/Pods-CharityApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3CB0C0BF7638889C5328B66 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CharityApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		32BAF9382225DA7800A947BD /* Sources */ = {
@@ -300,6 +374,7 @@
 		};
 		32BAF94F2225DA7900A947BD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B776D81959FBD47FFB766CB /* Pods-CharityApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -318,6 +393,7 @@
 		};
 		32BAF9502225DA7900A947BD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1412BAC96C924A90D45400EA /* Pods-CharityApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
