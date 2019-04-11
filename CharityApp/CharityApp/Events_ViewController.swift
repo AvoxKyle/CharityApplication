@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import SwiftSoup
 
 class EventItem {
     var event_Name: String?
@@ -21,35 +21,29 @@ class Events_ViewController: UIViewController {
     @IBOutlet var EventName: [UILabel]!
     @IBOutlet var EventDesc: [UILabel]!
     @IBOutlet var EventDate: [UILabel]!
-    
-    //@IBOutlet var EventName: UILabel!
-    //@IBOutlet var EventDesc: UILabel!
-    //@IBOutlet var EventDate: UILabel!
-    
-    
+
     @IBAction func setSpec(_ sender: AnyObject) {
     guard let button = sender as? UIButton else {
     return
     }
-    /*
-    switch button.tag {
-    case 1:
-        self.EventName[button.tag-1].text = "event 1"
-    case 2:
-        self.EventName.text = "event 2"
-    case 3:
-        self.EventName.text = "event 3"
-    case 4:
-        self.EventName.text = "event 4"
-    default:
-        self.EventName.text = "there is a problem"
-    }
-        */
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        let urlString: String = "https://dsaofnwi.org/news_events/event_calendar.html"
+        let url: URL = URL(string: urlString)!
+        let urlRequest: URLRequest = URLRequest(url: url)
+        let html = try! String(contentsOf: url, encoding: .utf8)
+        do {
+            let doc: Document = try SwiftSoup.parseBodyFragment(html)
+            let body = doc.body()
+            
+        } catch Exception.Error(let type, let message) {
+            print("Message: \(message)")
+        } catch {
+            print("error")
+        }
+        
         let event1 = EventItem()
         let event2 = EventItem()
         let event3 = EventItem()
