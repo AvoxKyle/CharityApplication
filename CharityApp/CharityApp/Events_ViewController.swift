@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WebKit
 import SwiftSoup
 
 class EventItem {
@@ -21,19 +22,22 @@ class Events_ViewController: UIViewController {
     @IBOutlet var EventName: [UILabel]!
     @IBOutlet var EventDesc: [UILabel]!
     @IBOutlet var EventDate: [UILabel]!
-
     @IBAction func setSpec(_ sender: AnyObject) {
     guard let button = sender as? UIButton else {
     return
     }
     }
+    @IBOutlet var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let urlString: String = "https://dsaofnwi.org/news_events/event_calendar.html"
         let url: URL = URL(string: urlString)!
         let urlRequest: URLRequest = URLRequest(url: url)
-        let html = try! String(contentsOf: url, encoding: .utf8)
+        let config = WKWebViewConfiguration()
+        let userContentController = WKUserContentController()
+        config.userContentController = userContentController
+        /*let html = try! String(contentsOf: url, encoding: .utf8)
         do {
             let doc: Document = try SwiftSoup.parseBodyFragment(html)
             let body = doc.body()
@@ -42,8 +46,23 @@ class Events_ViewController: UIViewController {
             print("Message: \(message)")
         } catch {
             print("error")
-        }
+        }*/
+        //webView.frame = CGRect(x: 0, y: 300, width: 436, height: 700)
+        self.webView = WKWebView(frame: view.frame, configuration: config)
         
+        view.addSubview(webView)
+        guard let scriptPath = Bundle.main.path(forResource: "eventsHideSections", ofType: "js"),
+            let scriptSource = try? String(contentsOfFile: scriptPath) else {return}
+        let userScript = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
+        userContentController.addUserScript(userScript)
+        /*
+        webView.evaluateJavaScript("document.getElementByTagName('table')[0].innerHTML", completionHandler: { (value, error) in
+            print("value")
+            print("error")*/
+        //})
+        self.webView.load(urlRequest)
+        self.webView.scrollView.contentInset = UIEdgeInsets.init(top: 0, left: -50, bottom: 0, right: -90)
+        self.webView.scrollView.bounces = false;
         let event1 = EventItem()
         let event2 = EventItem()
         let event3 = EventItem()
