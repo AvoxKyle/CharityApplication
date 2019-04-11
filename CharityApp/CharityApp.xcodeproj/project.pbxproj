@@ -100,7 +100,6 @@
 				0B776D81959FBD47FFB766CB /* Pods-CharityApp.debug.xcconfig */,
 				1412BAC96C924A90D45400EA /* Pods-CharityApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
