@@ -10,7 +10,10 @@ import UIKit
 import SwiftSoup
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var welcomeLabel: UILabel!
+    @IBOutlet weak var welcomeParaLabel: UILabel!
+    @IBOutlet weak var welcomeParaText: UITextView!
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -24,7 +27,12 @@ class ViewController: UIViewController {
         
         do {
             let html = try! String(contentsOf: myURL, encoding: .utf8)
-            //guard let elements: Elements = try? SwiftSoup.parse(html).select("div [class="primary-content"]") else {return}
+            //let doc: Document = try SwiftSoup.parse(html)
+            let primaryH1: Elements = try SwiftSoup.parse(html).select("div.primary-content h1")
+            let primaryContent: Elements = try SwiftSoup.parse(html).select("div.primary-content p")
+            welcomeLabel.text = try primaryH1.text()
+            welcomeParaLabel.text = try primaryContent.text()
+            welcomeParaText.text = try primaryContent.text()
         } catch let error {
             print("Error:", error)
         }
