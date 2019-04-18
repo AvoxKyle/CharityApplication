@@ -1,9 +1,12 @@
 var styleTag = document.createElement("style");
 var styleTagTwo = document.createElement("style");
 var styleTagThree = document.createElement("style");
+var styleTagFour = document.createElement("style");
+styleTagFour.textContent = '.internal .primary-container {font-size: 30px;}';
 styleTag.textContent = 'header, footer, .secondary-container  {display:none;}';
-styleTagTwo.textContent = '.internal .masthead {width: 1200px;}';
-styleTagThree.textContent = '.wrap {width: 1000px;}';
+styleTagTwo.textContent = '.internal .masthead {width: 1275px;}';
+styleTagThree.textContent = '.wrap {width: 600px;}';
 document.documentElement.appendChild(styleTag);
 document.documentElement.appendChild(styleTagTwo);
 document.documentElement.appendChild(styleTagThree);
+document.documentElement.appendChild(styleTagFour);
