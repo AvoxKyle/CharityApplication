@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         super.viewDidLoad()
         var number = Int.random(in: 1 ... 2)
+        //var number = Int(arc4random_uniform(2))
         
         if number == 1 {
         let urlString: String = "https://dsaofnwi.org/who_we_are/mission.html"
