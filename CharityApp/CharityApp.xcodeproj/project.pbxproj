@@ -17,6 +17,10 @@
 		84914A2622401D9A00DF9DDA /* DonationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84914A2522401D9A00DF9DDA /* DonationViewController.swift */; };
 		95A8C878BBDCFE5E4B89BB52 /* Pods_CharityApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C026E26A5526514E55535AAB /* Pods_CharityApp.framework */; };
 		C40B3914225F8DB7004FEDA1 /* eventsHideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = C40B3913225F8DB7004FEDA1 /* eventsHideSections.js */; };
+		C4450D65226F5CD8002498BB /* StartPageHideSections.js in Resources */ = {isa = PBXBuildFile; fileRef = C4450D64226F5CD8002498BB /* StartPageHideSections.js */; };
+		C4450D69226F5CF0002498BB /* StartPageHideSections3.js in Resources */ = {isa = PBXBuildFile; fileRef = C4450D66226F5CF0002498BB /* StartPageHideSections3.js */; };
+		C4450D6A226F5CF0002498BB /* StartPageHideSections2.js in Resources */ = {isa = PBXBuildFile; fileRef = C4450D67226F5CF0002498BB /* StartPageHideSections2.js */; };
+		C4450D6B226F5CF0002498BB /* StartPageHideSections4.js in Resources */ = {isa = PBXBuildFile; fileRef = C4450D68226F5CF0002498BB /* StartPageHideSections4.js */; };
 		C49B4D962225EA520039D524 /* Events_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49B4D952225EA520039D524 /* Events_ViewController.swift */; };
 		C4C51053222D977600A3AFCE /* SpecEvent_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,10 @@
 		84914A2522401D9A00DF9DDA /* DonationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationViewController.swift; sourceTree = "<group>"; };
 		C026E26A5526514E55535AAB /* Pods_CharityApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CharityApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C40B3913225F8DB7004FEDA1 /* eventsHideSections.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = eventsHideSections.js; sourceTree = "<group>"; };
+		C4450D64226F5CD8002498BB /* StartPageHideSections.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = StartPageHideSections.js; sourceTree = "<group>"; };
+		C4450D66226F5CF0002498BB /* StartPageHideSections3.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = StartPageHideSections3.js; sourceTree = "<group>"; };
+		C4450D67226F5CF0002498BB /* StartPageHideSections2.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = StartPageHideSections2.js; sourceTree = "<group>"; };
+		C4450D68226F5CF0002498BB /* StartPageHideSections4.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = StartPageHideSections4.js; sourceTree = "<group>"; };
 		C49B4D952225EA520039D524 /* Events_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Events_ViewController.swift; sourceTree = "<group>"; };
 		C4C51052222D977600A3AFCE /* SpecEvent_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpecEvent_ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,6 +81,10 @@
 		32BAF93E2225DA7800A947BD /* CharityApp */ = {
 			isa = PBXGroup;
 			children = (
+				C4450D64226F5CD8002498BB /* StartPageHideSections.js */,
+				C4450D67226F5CF0002498BB /* StartPageHideSections2.js */,
+				C4450D66226F5CF0002498BB /* StartPageHideSections3.js */,
+				C4450D68226F5CF0002498BB /* StartPageHideSections4.js */,
 				C49B4D952225EA520039D524 /* Events_ViewController.swift */,
 				32BAF93F2225DA7800A947BD /* AppDelegate.swift */,
 				841CFC6122544756000AE403 /* hideSections.js */,
@@ -168,9 +180,13 @@
 			files = (
 				841CFC6222544756000AE403 /* hideSections.js in Resources */,
 				32BAF94A2225DA7900A947BD /* LaunchScreen.storyboard in Resources */,
+				C4450D65226F5CD8002498BB /* StartPageHideSections.js in Resources */,
+				C4450D6A226F5CF0002498BB /* StartPageHideSections2.js in Resources */,
 				32BAF9472225DA7900A947BD /* Assets.xcassets in Resources */,
 				C40B3914225F8DB7004FEDA1 /* eventsHideSections.js in Resources */,
+				C4450D69226F5CF0002498BB /* StartPageHideSections3.js in Resources */,
 				32BAF9452225DA7800A947BD /* Main.storyboard in Resources */,
+				C4450D6B226F5CF0002498BB /* StartPageHideSections4.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
