@@ -283,11 +283,17 @@
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
                             </wkWebView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="ehj-Cc-LfL">
+                                <rect key="frame" x="169" y="299" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="1" green="0.0" blue="0.046545039428554702" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="tXe-4M-HhP"/>
                     </view>
                     <connections>
+                        <outlet property="activityIndicator" destination="ehj-Cc-LfL" id="ADp-DR-pCZ"/>
                         <outlet property="webView" destination="46B-Pc-FSP" id="V0S-YD-u2l"/>
                         <outletCollection property="EventName" destination="Hmr-n3-AUK" collectionClass="NSMutableArray" id="k4m-gY-Rw8"/>
                         <outletCollection property="EventDesc" destination="tvQ-NK-zPw" collectionClass="NSMutableArray" id="WkM-7M-Mjh"/>

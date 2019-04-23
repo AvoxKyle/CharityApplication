@@ -28,6 +28,8 @@ class Events_ViewController: UIViewController {
     }
     }
     @IBOutlet var webView: WKWebView!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -51,6 +53,8 @@ class Events_ViewController: UIViewController {
         self.webView = WKWebView(frame: view.frame, configuration: config)
         
         view.addSubview(webView)
+        view.addSubview(activityIndicator)
+        
         guard let scriptPath = Bundle.main.path(forResource: "eventsHideSections", ofType: "js"),
             let scriptSource = try? String(contentsOfFile: scriptPath) else {return}
         let userScript = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
@@ -63,6 +67,7 @@ class Events_ViewController: UIViewController {
         self.webView.load(urlRequest)
         self.webView.scrollView.contentInset = UIEdgeInsets.init(top: 0, left: -50, bottom: 0, right: -90)
         self.webView.scrollView.bounces = false;
+        self.webView.addObserver(self, forKeyPath: #keyPath(WKWebView.isLoading), options: .new, context: nil)
         let event1 = EventItem()
         let event2 = EventItem()
         let event3 = EventItem()
@@ -90,7 +95,21 @@ class Events_ViewController: UIViewController {
         
     }
     
-
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        if keyPath == "loading" {
+            if webView.isLoading {
+                activityIndicator.startAnimating()
+                activityIndicator.isHidden = false
+            } else {
+                activityIndicator.stopAnimating()
+            }
+        }
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
 
  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -104,5 +123,7 @@ class Events_ViewController: UIViewController {
             vc.passedDate = self.EventDate[button.tag-1].text
         }
     }
+    
+    
     
 }
