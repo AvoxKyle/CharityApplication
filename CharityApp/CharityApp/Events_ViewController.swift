@@ -59,11 +59,7 @@ class Events_ViewController: UIViewController {
             let scriptSource = try? String(contentsOfFile: scriptPath) else {return}
         let userScript = WKUserScript(source: scriptSource, injectionTime: .atDocumentEnd, forMainFrameOnly: true)
         userContentController.addUserScript(userScript)
-        /*
-        webView.evaluateJavaScript("document.getElementByTagName('table')[0].innerHTML", completionHandler: { (value, error) in
-            print("value")
-            print("error")*/
-        //})
+
         self.webView.load(urlRequest)
         self.webView.scrollView.contentInset = UIEdgeInsets.init(top: 0, left: -50, bottom: 0, right: -90)
         self.webView.scrollView.bounces = false;

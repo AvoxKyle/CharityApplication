@@ -11,9 +11,6 @@ import SwiftSoup
 import WebKit
 
 class ViewController: UIViewController {
-    @IBOutlet weak var welcomeLabel: UILabel!
-    @IBOutlet weak var welcomeParaLabel: UILabel!
-    @IBOutlet weak var welcomeParaText: UITextView!
     @IBOutlet var webView: WKWebView!
     @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
 
